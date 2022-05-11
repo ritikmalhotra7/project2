@@ -13,4 +13,5 @@
     <string name="heading">HEADING</string>
     <string name="type">type</string>
     <string name="enter_your_note">Enter your Note</string>
+    <string name="notify">NOTIFY</string>
 </resources>

@@ -45,11 +45,17 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
         idbody.text = note.body
         idtype.text = note.type
 
+        back.setOnClickListener {
+            findNavController().navigate(R.id.action_notesFragment_to_mainFragment)
+        }
+
         idiv.setOnClickListener {
             switcher.showNext()
             switcheriv.showNext()
             switcher1.showNext()
             switcher2.showNext()
+
+            heading.text = idheading.text as Editable
         }
         id_ive.setOnClickListener {
             switcher.showNext()

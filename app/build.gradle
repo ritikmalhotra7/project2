@@ -66,4 +66,6 @@ dependencies {
     // Coroutine Lifecycle Scopes
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+    //SplashScreen
+    implementation 'androidx.core:core-splashscreen:1.0.0-alpha02'
 }

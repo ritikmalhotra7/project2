@@ -41,6 +41,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         val viewModelFactory = NotesViewModelProviderFactory(repository)
         viewModel = ViewModelProvider(this,viewModelFactory).get(NotesViewModel::class.java)
         viewModel.getAll().observe(viewLifecycleOwner, Observer{
+            if(it.size<=0){
+                defaultid.visibility = View.VISIBLE
+            }else{
+                defaultid.visibility = View.VISIBLE
+            }
             setupRV(it)
         })
         fab.setOnClickListener {
@@ -51,6 +56,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     @SuppressLint("NotifyDataSetChanged")
     private fun setupRV(ls :List<Notes>){
         rvAdapter = AppRVAdapter(ls)
+        if(ls.size==0){
+            defaultid.visibility = View.VISIBLE
+        }else{
+            defaultid.visibility = View.GONE
+        }
 
         id_rv.apply {
             adapter = rvAdapter
