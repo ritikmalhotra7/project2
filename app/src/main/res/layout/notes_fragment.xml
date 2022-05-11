@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10sp"
+    app:cardBackgroundColor="?colorPrimary"
+    app:cardCornerRadius="20sp"
+    tools:context=".ui.fragments.NotesFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="20sp"
+       android:scrollbars="none"
+       android:fadingEdge="vertical"
+       android:fadingEdgeLength="10dp">
+       <LinearLayout
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:orientation="vertical">
+           <com.airbnb.lottie.LottieAnimationView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:lottie_loop="true"
+               app:lottie_scale="0.4"
+               app:lottie_autoPlay="true"
+               app:lottie_rawRes="@raw/man_task"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+               <ViewSwitcher
+                   android:id="@+id/switcher"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.9">
+                   <TextView
+                       android:id="@+id/idheading"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/heading"
+                       android:textSize="30sp"
+                       android:textColor="?colorOnPrimary"
+                       android:textStyle="bold"
+                       />
+                   <EditText
+                       android:id="@+id/heading"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/heading"/>
+
+
+               </ViewSwitcher>
+               <ViewSwitcher
+                   android:id="@+id/switcheriv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.1">
+                   <ImageView
+                       android:id="@+id/idiv"
+                       android:layout_width="25dp"
+                       android:layout_height="30dp"
+                       android:backgroundTint="?colorOnPrimary"
+                       android:background="@drawable/icons8_edit"
+                       android:layout_gravity="center"
+                       android:layout_weight="0.1"/>
+                   <ImageView
+                       android:id="@+id/id_ive"
+                       android:layout_width="25dp"
+                       android:layout_height="30dp"
+                       android:backgroundTint="?colorOnPrimary"
+                       android:background="@drawable/icons8_checkmark_2"
+                       android:layout_gravity="center"
+                       android:layout_weight="0.1"/>
+               </ViewSwitcher>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:id="@+id/iddate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/example_date"
+                   android:textColor="?colorOnPrimary"
+                   android:layout_gravity="center_vertical"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=" - "
+                   android:layout_gravity="center_vertical"
+                   android:textColor="?colorOnPrimary"/>
+              <ViewSwitcher
+                  android:id="@+id/switcher1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:id="@+id/idtype"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="type"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="?colorOnPrimary"/>
+
+                  <Spinner
+                      android:id="@+id/id_stype"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:entries="@array/type"
+                      android:layout_marginVertical="10dp"
+                      android:backgroundTint="?colorOnPrimary"
+                      android:foregroundTint="?colorOnPrimary"
+                      android:textColor="?colorOnPrimary"/>
+              </ViewSwitcher>
+           </LinearLayout>
+           <View
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               android:layout_marginVertical="5dp"
+               android:background="?colorOnPrimary"/>
+           <ViewSwitcher
+               android:id="@+id/switcher2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/idbody"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/dummytext2"
+                   android:textColor="?colorOnPrimary"/>
+               <EditText
+                   android:id="@+id/idebody"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/enter_your_note"
+                   android:textColor="?colorOnPrimary"
+                   android:textColorHint="?colorOnPrimary"
+                   android:backgroundTint="?colorOnPrimary"/>
+           </ViewSwitcher>
+
+
+       </LinearLayout>
+   </ScrollView>
+
+</androidx.cardview.widget.CardView>

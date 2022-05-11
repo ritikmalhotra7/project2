@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10sp"
+    app:cardBackgroundColor="?colorPrimary"
+    app:cardCornerRadius="20sp"
+    tools:context=".ui.fragments.NotesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:scrollbars="none"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="10dp">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_loop="true"
+                app:lottie_scale="0.4"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/man_task"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/id_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/heading"
+                    android:textColor="?colorOnPrimary"
+                    android:textStyle="bold"
+                    android:textColorHint="?colorOnPrimary"
+                    android:layout_weight="1.9"
+                    />
+                <ImageView
+                    android:id="@+id/id_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="?colorOnPrimary"
+                    android:background="@drawable/icons8_checkmark_2"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/id_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="?colorOnPrimary"
+                android:foregroundTint="?colorOnPrimary"
+                android:textColor="?colorOnPrimary"/>
+
+            <EditText
+                android:id="@+id/id_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_note"
+                android:textColor="?colorOnPrimary"
+                android:textColorHint="?colorOnPrimary"
+                android:backgroundTint="?colorOnPrimary"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

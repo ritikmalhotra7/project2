@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.</string>
+    <string name="dummytext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at ea eius nobis omnis optio pariatur quo quos sit voluptas.</string>
+    <string-array name="type">
+        <item>Have plenty of time</item>
+        <item>Have to done ASAP</item>
+    </string-array>
+    <string name="example_date">12/21/32</string>
+    <string name="example_number">1</string>
+    <string name="heading">HEADING</string>
+    <string name="type">type</string>
+    <string name="enter_your_note">Enter your Note</string>
+</resources>
