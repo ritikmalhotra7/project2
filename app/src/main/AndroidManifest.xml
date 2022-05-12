@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_undraw_taking_notes_re_bnaf"
         android:label="@string/notify"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_undraw_taking_notes_re_bnaf"
         android:supportsRtl="true"
         android:theme="@style/Theme.NotesApp"
         >

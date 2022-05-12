@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.notesapp.R
@@ -54,7 +55,6 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
             switcheriv.showNext()
             switcher1.showNext()
             switcher2.showNext()
-
         }
         id_ive.setOnClickListener {
             switcher.showNext()

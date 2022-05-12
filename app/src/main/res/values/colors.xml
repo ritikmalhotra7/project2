@@ -12,6 +12,8 @@
     <color name="purple">#6200EA</color>
     <color name="orange">#FF6D00</color>
     <color name="darkorange">#DD2C00</color>
+    <color name="redish">#B71C1C</color>
     <color name="transparent">#00D50000</color>
+    <color name="almostBlack">#1C1C1C</color>
 
 </resources>
