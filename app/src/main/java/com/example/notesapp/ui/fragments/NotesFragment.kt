@@ -55,7 +55,6 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
             switcher1.showNext()
             switcher2.showNext()
 
-            heading.text = idheading.text as Editable
         }
         id_ive.setOnClickListener {
             switcher.showNext()
